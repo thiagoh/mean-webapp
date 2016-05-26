@@ -1,0 +1,33 @@
+<% include top %>
+
+<form action="/user/save" method="post">
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>User</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="form-group">
+          <label for="emailAddress">Email address</label>
+          <input type="email" class="form-control" name="emailAddress" id="id_emailAddress" placeholder="Email address" value="<%= user.emailAddress%>">
+        </div>
+
+        <div class="form-group">
+          <label for="firstName">First name</label>
+          <input type="text" class="form-control" name="firstName" id="id_firstName" placeholder="first name" value="<%= user.firstName%>">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last name</label>
+          <input type="text" class="form-control" name="lastName" id="id_lastName" placeholder="last name" value="<%= user.lastName%>">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</form>
